@@ -1,0 +1,25 @@
+{
+    "experiment_name" : "/data/ceph_11015/ssd/anhan/tagging_kid/bert/checkpoints/v1118",
+
+    "use_cuda" : 0,
+
+    "bert_config_path" :        "/data/ceph_11015/ssd/anhan/tagging_kid/bert/chinese_L-12_H-768_A-12/bert_config.json",
+    "pretrained_model_path" :   "/data/ceph_11015/ssd/anhan/tagging_kid/bert/chinese_L-12_H-768_A-12/chinese_bert_base.bin",
+    "vocab_file" :              "/data/ceph_11015/ssd/anhan/tagging_kid/bert/chinese_L-12_H-768_A-12/vocab.txt",
+
+    "label_file" :              "/data/ceph_11015/ssd/anhan/tagging_kid/bert/toy_data/data_v1118/label",
+    "label_weight_file":        "/data/ceph_11015/ssd/anhan/tagging_kid/bert/toy_data/data_v1118/label.weight",
+    "training_path" :           "/data/ceph_11015/ssd/anhan/tagging_kid/bert/toy_data/data_v1118/train",
+    "testing_path" :            "/data/ceph_11015/ssd/anhan/tagging_kid/bert/toy_data/data_v1118/test",
+
+    "max_seq_len" : 100,
+    "epochs" : 50,
+    "batch_size" : 4,
+    "eval_batch_size" : 32,
+    "num_workers" : 6,
+    
+    "num_tuning_layers" : 12,
+    "init_lr" : 5e-5,
+    "gradient_accumulation_steps" : 1,
+    "warmup_proportion" : 0.1
+}
